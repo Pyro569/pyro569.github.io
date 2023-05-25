@@ -29,3 +29,9 @@ function closeApp() {
 function maximizeApp() {
 
 }
+
+function openGame(page) {
+  document.getElementById('textFrame').style.display = "block";
+  document.getElementById('textFrame').setAttribute('src', page);
+  console.log('Opened game ' + page + ' on desktop');
+}

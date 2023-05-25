@@ -13,21 +13,27 @@
 [resizable=true]{
     resize: both;
     overflow: auto;
+    max-width: fit-content;
+    max-height: fit-content;
 }
 
-.taskbar{
-    position: fixed;
+#startButton{
+    position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
 }
 
-.grid-container {
-    display: grid;
-    gap: 50px;
+#dateTimeButton{
+        position: absolute;
+        bottom: 0;
+        left: 80%;
+        right: 0%;
 }
 
-.item1 {
-    grid-column-start: 1;
-    grid-column-end: 3;
+#emptyTaskBar {
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    right: 0%;
 }

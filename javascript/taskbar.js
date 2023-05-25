@@ -17,5 +17,4 @@ function currentTime() {
         }
     }
     document.getElementById('dateTime').innerText = currentTime + "ㅤㅤㅤㅤ" + dateTime;
-    console.log(dateTime);
 }
