@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="/javascript/hotdogclicker.js"></script>
     <title>nathanfeiler.dev</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,6 +11,22 @@
 <body style="background-color: white;">
 
     <h1>Hotdog Clicker</h1>
+
+    <div id="buttons">
+        <button onclick="clickHotdog()">Click the Hotdog</button>
+        <h3 id="hotdogCounter">Hotdogs: 0</h3>
+        <button onclick="buyVendor()" id="buyVendor">Buy Hotdog Vendor (12 Hotdogs)</button>
+    </div>
+
+    <script>
+        var hotdogs = 0;
+
+        function timer() {
+            updateStats();
+            addHPS();
+        }
+        setInterval(timer, 1000);
+    </script>
 
 </body>
 
