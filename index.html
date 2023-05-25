@@ -5,22 +5,37 @@
     <title>nathanfeiler.dev</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 
 
-<body>
+<body style="background-color: darkcyan;">
     <!--Page Includes-->
     
 
     <!--Page Body-->
-    <br>
-    <button onclick="testJS()">Javascript</button>
-    <br>
-    <button onclick="shrek()">Test</button>
-    <br>
+    
+        <!--Desktop Icons-->
+        <div class="desktopIcons" style="line-height: 0.2;">
+            <button onclick="testJS()" style="background-color: transparent; border: 0px;"><img src="/images/text_doc.png"></img></button>
+                <h5>Introduction</h5>
+            <button onclick="openTextFile('/subpages/DawnLang.html')" style="background-color: transparent; border: 0px;"><img src="/images/text_doc.png"></img></button>
+                <h5>DawnLang</h5>
+            <button onclick="openTextFile('/subpages/KobiWareEngine.html')" style="background-color: transparent; border: 0px;"><img src="/images/text_doc.png"></img></button>
+                <h5>KobiWare Engine</h5>
+        </div>
+
+        <iframe id="textFrame" src="/subpages/DawnLang.html" width="600" height="400"></iframe>
+
+        <script>
+            document.getElementById('textFrame').style.display = "none";
+            console.log('test');
+        </script>
 
     <!--Footer-->
-    <object type="text/html" data="footer.html" width=100%></object>
+    <!--<object type="text/html" data="footer.html" width=100%></object>-->
+
+    
     
 </body>
 
