@@ -23,16 +23,24 @@
             <button onclick="openTextFile('/subpages/DawnLang.html')" style="background-color: transparent; border: 0px;"><img src="/images/text_doc.png"></img></button>
                 <h6>ㅤDawnLang</h6>
             <button onclick="openTextFile('/subpages/KobiWareEngine.html')" style="background-color: transparent; border: 0px;"><img src="/images/text_doc.png"></img></button>
-                <h6>ㅤKobiWare Engine</h6>
-            <button onclick="openTextFile('/subpages/KobiWareEngine.html')" style="background-color: transparent; border: 0px;"><img src="/images/game_cartridge.png"></img></button>
-                <h6>ㅤHotdog Clicker</h6>
+                <h6>KobiWare Engine</h6>
+            <button onclick="openGame('/subpages/Hotdog Clicker/hotdogclicker.html')" style="background-color: transparent; border: 0px;"><img src="/images/game_cartridge.png"></img></button>
+                <h6>Hotdog Clicker</h6>
         </div>
         
         <iframe id="textFrame" style="width: 25%; height: 25%;" src="/subpages/DawnLang.html"></iframe>
         
-        <button onclick="currentTime()" style="width: 25%; height: 50px; background-color: darkgray;" id="startButton"><h5 id="start">Start</h5></button>
-        <button onclick="currentTime()" style="width: 65%; height: 50px; background-color: darkgray;" id="emptyTaskbar"><h5 id="start"></h5></button>
-        <button onclick="currentTime()" style="width: 20%; height: 50px; background-color: darkgray;" id="dateTimeButton"><h5 id="dateTime"></h5></button>
+        <div class="taskbar">
+            <button onclick="currentTime()" style="width: 25%; height: 50px; background-color: darkgray;" id="startButton">
+                <h5 id="start">Start</h5>
+            </button>
+            <button onclick="currentTime()" style="width: 65%; height: 50px; background-color: darkgray;" id="emptyTaskbar">
+                <h5 id="start"></h5>
+            </button>
+            <button onclick="currentTime()" style="width: 20%; height: 50px; background-color: darkgray;" id="dateTimeButton">
+                <h5 id="dateTime"></h5>
+            </button>
+        </div>
         
         <script>
             function timer() {
