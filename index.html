@@ -2,6 +2,7 @@
 
 <head>
     <script type="text/javascript" src="/javascript/index.js"></script>
+    <script type="text/javascript" src="/javascript/taskbar.js"></script>
     <title>nathanfeiler.dev</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -28,6 +29,22 @@
         </div>
         
         <iframe id="textFrame" style="width: 25%; height: 25%;" src="/subpages/DawnLang.html"></iframe>
+        
+        
+        
+        <div class="taskbar">
+            <button onclick="currentTime()"><h5 id="start">Start</h5></button>
+            <button onclick="currentTime()"><h5 id="dateTime"></h5></button>
+        </div>
+
+        
+        
+        <script>
+            var interval = 1000;
+            var expected = Date.now() + interval;
+            setTimeout(currentTime(), interval);
+        </script>
+
 
         <script>
             document.getElementById('textFrame').style.display = "none";
@@ -35,7 +52,7 @@
 
     <!--Footer-->
     <!--<object type="text/html" data="footer.html" width=100%></object>-->
-
+    
     
     
 </body>
