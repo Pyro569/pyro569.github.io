@@ -17,6 +17,15 @@ function redirect(page) {
 
 function openTextFile(page) {
   document.getElementById('textFrame').style.display = "block";
-  document.getElementById('textFrame').setAttribute('data', page);
+  document.getElementById('textFrame').setAttribute('src', page);
   console.log('Opened text file ' + page + ' on desktop');
+}
+
+function closeApp() {
+  document.getElementById('textFrame').style.display = "none";
+  console.log('closing app');
+}
+
+function maximizeApp() {
+
 }

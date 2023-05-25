@@ -17,19 +17,20 @@
     
         <!--Desktop Icons-->
         <div class="desktopIcons" style="line-height: 0.2;">
-            <button onclick="testJS()" style="background-color: transparent; border: 0px;"><img src="/images/text_doc.png"></img></button>
+            <button onclick="openTextFile('/subpages/Introduction.html')" style="background-color: transparent; border: 0px;"><img src="/images/text_doc.png"></img></button>
                 <h5>Introduction</h5>
             <button onclick="openTextFile('/subpages/DawnLang.html')" style="background-color: transparent; border: 0px;"><img src="/images/text_doc.png"></img></button>
                 <h5>DawnLang</h5>
             <button onclick="openTextFile('/subpages/KobiWareEngine.html')" style="background-color: transparent; border: 0px;"><img src="/images/text_doc.png"></img></button>
                 <h5>KobiWare Engine</h5>
+            <button onclick="openTextFile('/subpages/KobiWareEngine.html')" style="background-color: transparent; border: 0px;"><img src="/images/game_cartridge.png"></img></button>
+                <h5>Hotdog Clicker</h5>
         </div>
-
-        <iframe id="textFrame" src="/subpages/DawnLang.html" width="600" height="400"></iframe>
+        
+        <iframe id="textFrame" style="width: 25%; height: 25%;" src="/subpages/DawnLang.html"></iframe>
 
         <script>
             document.getElementById('textFrame').style.display = "none";
-            console.log('test');
         </script>
 
     <!--Footer-->

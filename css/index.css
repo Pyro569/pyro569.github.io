@@ -1,5 +1,16 @@
 #textFrame{
-    margin-left: auto;
-    margin-right: auto;
-    width: 8em
+    position: absolute;
+    top: 33%;
+    left: 33%;
+    resize: both;
+    overflow: auto;
+}
+
+[draggable=true]{
+    cursor: move;
+}
+
+[resizable=true]{
+    resize: both;
+    overflow: auto;
 }
