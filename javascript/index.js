@@ -18,16 +18,18 @@ function redirect(page) {
 function openTextFile(page) {
   document.getElementById('textFrame').style.display = "block";
   document.getElementById('textFrame').setAttribute('src', page);
+  document.getElementById('operationButtons').style.display = "block";
   console.log('Opened text file ' + page + ' on desktop');
 }
 
 function closeApp() {
   document.getElementById('textFrame').style.display = "none";
+  document.getElementById('operationButtons').style.display = "none";
   console.log('closing app');
 }
 
 function maximizeApp() {
-
+  
 }
 
 function openGame(page) {
