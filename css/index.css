@@ -6,10 +6,6 @@
     overflow: auto;
 }
 
-[draggable=true]{
-    cursor: move;
-}
-
 [resizable=true]{
     resize: both;
     overflow: auto;
