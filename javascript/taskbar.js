@@ -1,3 +1,6 @@
+var startMenuShowing = false;
+var submenuShowing = false;
+
 function currentTime() {
     var time = new Date();
     var dateTime = time.getMonth() + "/" + time.getDate() + "/" + time.getFullYear();
@@ -17,4 +20,25 @@ function currentTime() {
         }
     }
     document.getElementById('dateTime').innerText = currentTime + "ㅤㅤㅤㅤ" + dateTime;
+}
+
+function start() {
+    if (startMenuShowing) {
+        document.getElementById('startMenu').style.display = "none";
+        document.getElementById('startMenuExtension').style.display = "none";
+        startMenuShowing = false;
+    } else {
+        document.getElementById('startMenu').style.display = "block";
+        startMenuShowing = true;
+    }
+}
+
+function startSubmenu(page) {
+    if (submenuShowing) {
+        document.getElementById('startMenuExtension').style.display = "none";
+        submenuShowing = false;
+    } else {
+        document.getElementById('startMenuExtension').style.display = "block";
+        submenuShowing = true;
+    }
 }
