@@ -43,7 +43,11 @@ function maximizeApp() {
 }
 
 function openGame(page) {
-  document.getElementById('textFrame').style.display = "block";
-  document.getElementById('textFrame').setAttribute('src', page);
+  window.parent.document.getElementById('textFrame').style.display = "block";
+  window.parent.document.getElementById('textFrame').setAttribute('src', page);
   console.log('Opened game ' + page + ' on desktop');
+}
+
+function openGameFullscreen(page) {
+  window.parent.location.href = page;
 }
