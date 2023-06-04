@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <script type="text/javascript" src="/javascript/index.js"></script>
+    <title>nathanfeiler.dev</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+
+<body style="background-color: white;">
+
+    <h1>What is raycasting?</h1>
+    <p>Raycasting is a graphics drawing process commonly used in interactive graphical computer applications, AKA video games. While raycasting is relatively ancient now and
+        not quiet in style anymore, its a tactic that was widespread during the 90's for video games. First, what actually is raycasting? Raycasting is the process of
+        drawing a grid on a 2D surface, then drawing a player object then "shooting" out rays that represent the player's "vision", and then drawing these rays in 
+        a different perspective to give a 3D effect. While this may sound complicated, this is relatively simple in theory and can actually be executed in about 
+        300 or less lines of code. Three examples of video games that use this tactic are Wolfenstein 3D, DOOM and Duke Nukem. The reason this method is used for
+        these games is because of its relatively light-weight hardware usage and great effect of giving the sense of true 3D. If any of the prior mentioned games 
+        had attempted 3D graphics akin to what you'd see on an N64 or Playstation 1, then computers of the time would not be able to run it really at all, hence why
+        they would use these graphical techniques for their games.
+    </p>
+    <h1>How does raycasting work?</h1>
+    <p>It's a bit difficult to explain raycasting in words, its much easier to just show you how it works via the likes of playing video games, but it's quite simple
+        in reality. Imagine a 2D graph, just an empty coordinate grid type of graph you'd see on a graphing calculator. Now lets imagine this graph as all 0's, each grid is
+        just a 0. Now let's imagine the axes of this coordinate graph, lets represent these as 0's, so on our graph in the location where our axes would be, let's change those to
+        1's. Our graph might look a little something like this now: <br> <br>
+        0 0 0 1 0 0 0<br>
+        0 0 0 1 0 0 0<br>
+        0 0 0 1 0 0 0<br>
+        1 1 1 1 1 1 1<br>
+        0 0 0 1 0 0 0<br>
+        0 0 0 1 0 0 0<br>
+        0 0 0 1 0 0 0<br> <br>
+        Now, lets imagine that these 1's are solid walls that cannot be passed, and these 0's are empty spaces that can be passed. Kind of almost seems like 
+        the layout of a video game level now right? Well, your right! It is a layout of a videogame level! Our raycaster will take this array and draw a simple 
+        grid on the screen like this, with a 0 being an empty space and a 1 being a filled space.
+    </p>
+
+</body>
+
+</html>

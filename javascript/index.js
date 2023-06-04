@@ -18,9 +18,8 @@ function redirect(page) {
 }
 
 function openTextFile(page) {
-  document.getElementById('textFrame').style.display = "block";
-  document.getElementById('textFrame').setAttribute('src', page);
-  document.getElementById('operationButtons').style.display = "block";
+  window.parent.document.getElementById('textFrame').style.display = "block";
+  window.parent.document.getElementById('textFrame').setAttribute('src', page);
   console.log('Opened text file ' + page + ' on desktop');
 }
 
