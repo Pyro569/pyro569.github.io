@@ -34,7 +34,32 @@
         0 0 0 1 0 0 0<br> <br>
         Now, lets imagine that these 1's are solid walls that cannot be passed, and these 0's are empty spaces that can be passed. Kind of almost seems like 
         the layout of a video game level now right? Well, your right! It is a layout of a videogame level! Our raycaster will take this array and draw a simple 
-        grid on the screen like this, with a 0 being an empty space and a 1 being a filled space.
+        grid on the screen like this, with a 0 being an empty space and a 1 being a filled space. Now, this next step may seem a bit abstract, but bear with me.
+        Imagine this grid is actually a top down look at a 3D model of our level. Now, lets just imagine a person is down in the very top left zero of that grid
+        and is staring straight into the corner at a 45 degree angle. Now let's take into account that person's vision and perspective, they can obviously only
+        see so far in their peripheral vision. So lets just shade in this area that they can see and stop shading once we hit a wall boundary/1 in our grid. 
+        Now you'll notice, that this makes a triangle! This triangle represents what our person can see, and these are our "rays" that we are casting. So now if we put it 
+        all together, the raycaster will then take the 2D triangle image and how far away the walls/boundaries are and then draw a scene that is a projection
+        of this triangle and the walls. There's more to raycasting in order to make it more like the old first-person shooter games of old like DOOM and Wolfenstein 3D, 
+        but we'll get into that later.
+    </p>
+    <h1>Why use raycasting?</h1>
+    <p>While nowadays raycasting is an archaic form and in hindsight does have some flaws, it is certainly an interesting technique for its time that was spawned
+        out of technical limitations. So, lets take a step back to 1992. You now have a giant CRT monitor, a Pentium 2 processor, a VooDoo Banshee GPU, 128 megabyes of RAM and about 8 gigabytes
+        of storage on your computer, your plugged into the ethernet and you've got AOL browser open in the background. Some might say these were simple days, back when
+        you would just put Super Mario World into your SNES and worry about nothing, but actually, these were far from simple days. All video games were pretty much
+        made in straight assembly code and had to use genius tricks to even work and run, such as the NES sprite flickering, and raycasting was one of these tricks. Back
+        in 1992 3D graphics were still not a common thing, huge billion dollar companies had access to this technology, but it was still a long way away from being
+        commonplace with how low-spec computers and gaming consoles of the time were. Companies such as Nintendo were experimenting with 3D graphics at the time with games such
+        as Starfox, but these were expensive to produce due to needing custom hardware in the cartridge and the development time was significant. So in came tricks, specifically 
+        raycasting. Games were heading in the 3D direction, but nobody had the hardware for it, so somebody had to make some tricks that would work, which gave birth to
+        raycasting, a sort of psuedo-3D or 2.5D as people like to call it. Due to raycasting just needing to run a few hundred calculations every second or so, this
+        was perfect for the low-spec hardware of then, and then alas, raycasting became a thing. DOOM released in 1993 to critical acclaim and strong sales while using
+        raycasting as its main graphical rendering (technically DOOM used an advanced method of raycasting known as binary space partitioning, but we'll get to that later,
+        however what is considered the first true 3D game is in fact DOOM's predecessor, Wolfenstein 3D) DOOM was a huge hit, and because of this, raycasting spread.
+        And it spread far. Very far. Soon games such as System Shock and Duke Nukem were using them and were able to run on relatively low-spec hardware for the time, thus 
+        giving an appeal to raycasting for the time to most game developers. Nowadays raycasting is nowhere near as common as it used to be due to technology evolving quickly
+        after raycasting spread, but now raycasting is useful for many reasons, such as building an old-school style FPS video game or for fun.
     </p>
 
 </body>
