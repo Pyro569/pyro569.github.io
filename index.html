@@ -65,34 +65,34 @@
 
             var textFrame = document.getElementById('textFrame');
 
-                textFrame.addEventListener('dragstart', dragStart);
-                textFrame.addEventListener('dragend', dragEnd);
+            textFrame.addEventListener('dragstart', dragStart);
+            textFrame.addEventListener('dragend', dragEnd);
 
-                function dragStart(event) {
-                    event.dataTransfer.setData('text/plain', event.target.id);
-                }
+            function dragStart(event) {
+                event.dataTransfer.setData('text/plain', event.target.id);
+            }
 
-                function dragEnd(event) {
-                    event.target.style.opacity = '1';
-                }
+            function dragEnd(event) {
+                event.target.style.opacity = '1';
+            }
 
-                document.addEventListener('dragover', dragOver);
-                document.addEventListener('drop', drop);
+            document.addEventListener('dragover', dragOver);
+            document.addEventListener('drop', drop);
 
-                function dragOver(event) {
-                    event.preventDefault();
-                }
+            function dragOver(event) {
+                event.preventDefault();
+            }
 
-                function drop(event) {
-                    event.preventDefault();
+            function drop(event) {
+                event.preventDefault();
 
-                    var data = event.dataTransfer.getData('text/plain');
+                var data = event.dataTransfer.getData('text/plain');
 
-                    var draggableElement = document.getElementById(data);
+                var draggableElement = document.getElementById(data);
 
-                    draggableElement.style.left = event.clientX + 'px';
-                    draggableElement.style.top = event.clientY + 'px';
-                }
+                draggableElement.style.left = event.clientX + 'px';
+                draggableElement.style.top = event.clientY + 'px';
+            }
         </script>
     
 </body>
