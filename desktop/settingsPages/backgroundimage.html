@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <script type="text/javascript" src="/javascript/index.js"></script>
+    <title>nathanfeiler.dev</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+
+<body style="background-color: white;">
+
+    <label for="img">To set a custom image as the desktop background please upload a file:</label>
+    <br>
+    <input type="file" id="imgInput" name="img" accept="image/*">
+    <button onclick="setBackgroundImage()">Submit</button>
+
+    <script>
+
+        function setBackgroundImage(){
+            window.parent.document.getElementById("desktop").style.backgroundImage = document.getElementById("imgInput").
+        }
+
+    </script>
+
+</body>
+
+</html>

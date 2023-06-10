@@ -50,3 +50,8 @@ function openGame(page) {
 function openGameFullscreen(page) {
   window.parent.location.href = page;
 }
+
+function internetExplorer(){
+  document.getElementById('textFrame').style.display = "block";
+  window.parent.document.getElementById('textFrame').setAttribute('src', "https://www.google.com/custom?q=");
+}
