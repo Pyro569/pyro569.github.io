@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+
+namespace Interpreter
+{
+class Input
+{
+static List<string> Tokens = new List<string>();
+
+        static void Main(string[] args)
+        {
+        Console.Title = "C# Python Interpreter";
+        while (true)
+        {
+        Tokens.Clear();
+        string input = Console.ReadLine();
+        Tokenize(input);
+        }
+        }
+
+        static void Tokenize(string input)
+        {
+        string currentToken = "";
+        for (int i = 0; i < input.Length; i++) { if (input[i] !=';' && input[i] !='(' && input[i] !=')' && input[i]
+            !='"' && input[i] !='=' && input[i] !='<' && input[i] !='!' && input[i] !='>' ) { currentToken +=input[i]; }
+            else { Tokens.Add(currentToken); Tokens.Add(input[i] + "" ); currentToken="" ; } } } } }
