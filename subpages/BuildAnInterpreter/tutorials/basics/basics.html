@@ -11,22 +11,10 @@
 <body style="background-color: white;">
 
     <h1>Basics</h1>
-    <p>Before we start to set up our interpreter in this page, we will need a few things before hand. First and foremost, we will need an Integrated Development Environment
-        for our interpreter, my interpreter of choice is Visual Studio Code. Next we will need to choose a programming language to use for our interpreter, for this I
-        will be using C#, but as long as you can understand the fundamentals or know how to convert C# to your preferred language, you should be fine.
-    </p>
-    <p>Now that we have the important basics, we can start. The first basic segment of building an interpreter is constant input. Simply always have the program loop
-        back around and ask for an input. For now my code looks like this: 
-        <iframe src="snippet1.html" width="500" height="100"></iframe>
-    </p>
-    <p>After you have done that, you will want a method called something along the lines of "Tokenize" that takes in a string that is the input that the user was prompted
-        for and input. After you have the method created, you will want a for loop that will iterate through each character of the string input. Inside of this for loop you
-        will want an if/else statement, with the if statement using several conditions to check if the current character of the input is not equal to several special characters
-        (These will be characters that will necessitate a new token, so in my case I used ;()"=<!>) After you have created this if/else statement you will want a list 
-        with a name such as Tokens, this list will store each token. In your if statement, if the current character passes the check you will want to add the current character 
-        to a string, if not you will want to add the string that is the current token to your list that contains all tokens and then add the current character to the string again,
-        then append the string to tokens again and set the string to be empty. For now my code looks like this:
-        <iframe src="snippet2.html" width="500" height="100"></iframe>
+    <h2>Foreward</h2>
+    <p>This is a slightly advanced topic in the field of computer science, while it is one of the fundamental ideas of programming languages in computer science
+        this is not a project that I would recommend to a brand new programmer. The concepts at play here are not too terribly difficult but is perhaps a large program
+        for a new programmer. I would recommend to come back to this with some experience if you are a new programmer.
     </p>
 
 </body>
