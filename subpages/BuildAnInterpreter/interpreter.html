@@ -11,6 +11,7 @@
 <body style="background-color: white;">
 
     <input type="text" id="console_input"></input><button onclick="Read()">Send</button>
+    <h3 id="console_output">JSBASIC > </h3>
 
 </body>
 
@@ -50,18 +51,27 @@
     }
 
     function run_tokens(tokens){
+        //run through each token and check if it is in the set of designated commands
         for(let i = 0; i < tokens.length; i++){
+            let console_output = "";
+
             switch(tokens[i]){
                 case "Print":
-                    if(tokens[i+1] == '(' && tokens[i+2] == '"')
+                    if(tokens[i+1] == '(' && tokens[i+2] == '"')//if the token is Print and has a (" following it then print out everything until until the next quotation
                         for(let k = i + 3; k < tokens.length; k++)
                             if(tokens[k] != '"')
-                                console.log(tokens[k]);
-                            else
+                                console_output += tokens[k];
+                            else{
+                                change_console_output(console_output);
                                 break;
+                            }
                     break;
             }
         }
+    }
+
+    function change_console_output(output){
+        document.getElementById("console_output").textContent = "JSBASIC > " + output;
     }
 </script>
 
