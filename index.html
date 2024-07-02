@@ -9,6 +9,17 @@
     <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RXK04G9G1N"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-RXK04G9G1N');
+</script>
+
+
 
 <body style="background-color: darkcyan;" id="desktop">
     <!--Page Includes-->
@@ -19,13 +30,15 @@
         <!--Desktop Icons-->
         <div class="desktopIcons" style="line-height: 0.2;">
             <button onclick="openTextFile('/desktop/settings.html')" style="background-color: transparent; border: 0px;"><img src="/images/desktop icons/text_doc.png"></img></button>
-                <h6>ㅤSettings</h6>
+                <h6 style="left: 0.5vw; position: relative;">ㅤSettings</h6>
             <button onclick="openTextFile('/subpages/projects.html')" style="background-color: transparent; border: 0px;"><img src="/images/desktop icons/text_doc.png"></img></button>
-                <h6>ㅤProjects</h6>
+                <h6 style="left: 0.5vw; position: relative;">ㅤProjects</h6>
             <!--<button onclick="openTextFile('/subpages/kobiware.html')" style="background-color: transparent; border: 0px;"><img src="/images/desktop icons/text_doc.png"></img></button>
                 <h6>ㅤKobiWare</h6>-->
+            <button onclick="openTextFile('/subpages/tsa.html')" style="background-color: transparent; border: 0px;"><img src="/images/desktop icons/text_doc.png"></img></button>
+                <h6 style="left: 0.5vw; position: relative;">TSA</h6>
             <button onclick="openGame('/subpages/games.html')" style="background-color: transparent; border: 0px;"><img src="/images/desktop icons/game_cartridge.png"></img></button>
-                <h6>ㅤGames</h6>
+                <h6 style="left: 0.5vw; position: relative;">ㅤGames</h6>
         </div>
         
         <iframe id="textFrame" style="width: 25%; height: 25%; border-width: 5px;" src="/subpages/DawnLang.html" draggable="true"></iframe>
