@@ -12,14 +12,17 @@ function currentTime() {
         } else {
             var currentTime = hour-12 + ":0" + time.getMinutes()+"PM";
         }
-    } else {
+    } else if (hour == 12) {
+        var currentTime = hour + ":" + time.getMinutes()+"PM";
+    }
+    else {
         if (minutes >= 10) {
             var currentTime = hour + ":" + time.getMinutes()+"AM";
         } else {
             var currentTime = hour + ":0" + time.getMinutes()+"AM";
         }
     }
-    document.getElementById('dateTime').innerText = currentTime + "ㅤㅤㅤㅤ" + dateTime;
+    document.getElementById('dateTime').innerText = currentTime + " " + dateTime;
 }
 
 function start() {
